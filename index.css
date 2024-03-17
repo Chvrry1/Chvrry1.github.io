@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 600px){
+  body,section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 599px){
+  body,section{
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body{
+    padding: 20px;
+  }
+  #output{
+    width: 100% !important;
+  }
+  textarea{
+    width: 300px !important;
+  }
+  #output{
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  #out{
+    padding: 0 !important;
+  }
+  #input{
+    width: 100% !important;
+  }
+  header,#input,#output, #out{
+    margin-bottom: 30px;
+  }
+  #buttons{
+    width: 100%;
+    display: flex;
+  }
+}
+body{
+  padding-top: 50px;
+  height: 90vh;
+  background-color:#ebeef2;
+}
+header > img{
+  padding-left: 50px;
+  padding-right: 180px;
+}
+section{
+  width: 1500px;
+  height: 100%;
+  justify-content: space-between;
+}
+textarea{
+  border: none;
+  outline: none;
+  font-size: 24px;
+  resize: none;
+}
+#input > textarea{
+  height: 500px;
+  width: 1000px;
+  background-color:#ebeef2;
+}
+#out > textarea{
+  height: 500px;
+  width: 100%;
+}
+#input{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#output{
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.309);
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 30px;
+}
+#aviso{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#aviso > p{
+  margin-left: 10px;
+}
+#buttons{
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  cursor: pointer;
+  border: solid 1px #0A3871;
+  width: 45%;
+  padding: 16px 32px;
+  font-size: 24px;
+  position: relative;
+  border-radius: 12px;
+}
+#encriptar{
+  background-color: #0A3871;
+  color: #D8DFE8;
+}
+#desencriptar{
+  background-color: #D8DFE8;
+  color: #0A3871;
+  margin-right: 40px;
+}
+#out{
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+h3{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
